@@ -5,7 +5,7 @@
 - _Intention vs Fact._
 
 ### Event Sourcing
-- _ captures all changes to an application state as a sequence of events. [martinfowler](https://martinfowler.com/eaaDev/EventSourcing.html)
+- _ captures all changes to an application state as a sequence of events. [Martin Fowler](https://martinfowler.com/eaaDev/EventSourcing.html)
 - _ is all about storing of facts. [Greg Young](https://youtu.be/JHGkaShoyNs)
 - _ allows you to time travel. [Greg Young](https://youtu.be/JHGkaShoyNs)
 - _ provides loss less transactional model, append-only, immutable. [Greg Young](https://youtu.be/JHGkaShoyNs)
@@ -13,7 +13,7 @@
 
 ### CQRS
 - _ is a pattern that segregates the operations that read data (queries) from the operations that update data (commands) by using separate interfaces. [msdn](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)
-- _ splits the application into two parts: the command-side and the query-side. The command-side handles create, update, and delete requests and emits events when data changes. / [microservices.io](http://microservices.io/patterns/data/cqrs.html)
+- _ splits the application into two parts: the command-side and the query-side. The command-side handles create, update, and delete requests and emits events when data changes. [microservices.io](http://microservices.io/patterns/data/cqrs.html)
 - I've come to the conclusion that commands are redundant. They are simply events from your user, they did press that button. You should store these in exactly the same way as other events because it is data you don't know if you will want to use it in a future view. Your user did add and then later remove that item from the basket or at least attempt to. You may later want to use this information to remind the user of this at later date. [stackoverflow](https://stackoverflow.com/a/27225926)
 - _ _segregates update and read operations_
 
