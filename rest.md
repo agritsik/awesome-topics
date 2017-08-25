@@ -1,0 +1,2 @@
+### REST without PUT
+- we no longer PUT the "new" state of an entity, instead we make our mutations be first class citizen nouns (rather than verbs), and POST them. This also plays very nicely with event sourcing - events are a canonical example of first class citizen nouns and help us get out of the mindset of thinking of them as "mutators" - they're domain relevant events, not just a change to the state of some object. [thoughtworks](https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling)
