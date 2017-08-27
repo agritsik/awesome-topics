@@ -3,8 +3,9 @@ Here I'm trying to gather awesome Thoughts, Ideas and Considerations regarding a
 
 ### Candidates
 
-| Languages  | Persistences    | Communications | Architecture        |
-|------------|-----------------|----------------|---------------------|
-| Java       | mysql           | REST           | [CQRS](cqrs.md)     |
-| Javascript | mongodb         | RabbitMQ       | Stability Patterns  |
-| Haskel     | lucene/casandra | Kafka          | Microservices Infra |
+| Languages  | Persistences    | Communications | Architecture         |
+|------------|-----------------|----------------|----------------------|
+| Java       | mysql           | REST           | [CQRS](cqrs.md)      |
+| Javascript | mongodb         | RabbitMQ       | Domain-Driven Desing |                 
+| Haskel     | lucene/casandra | Kafka          | Stability Patterns   |
+|            |                 |                | Microservices Infra  |
