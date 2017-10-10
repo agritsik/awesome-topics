@@ -17,4 +17,10 @@
 - **Load Balance on Read-Heavy Deployments**. In a deployment with very high read traffic, you can improve read throughput by distributing reads to secondary members. 
 - **Distribute Members Geographically**
 
+#### Replica Set Elections
+- Heartbeats
+- Member Priority
+- Loss of a Data Center
+- Network Partition
+
 ### Sharding
