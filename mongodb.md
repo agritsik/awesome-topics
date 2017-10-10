@@ -18,6 +18,7 @@
 - **Distribute Members Geographically**
 
 #### Replica Set Elections
+Factors and Conditions that Affect Elections:
 - Heartbeats
 - Member Priority
 - Loss of a Data Center
