@@ -25,3 +25,10 @@ Factors and Conditions that Affect Elections:
 - Network Partition
 
 ### Sharding
+#### Sharding Components
+- **shard** - contains a subset of the sharded data. Each shard can be deployed as a replica set.
+- **mongos** - acts as a query router, providing an interface between client applications and the sharded cluster.
+- **config servers** - store metadata and configuration settings for the cluster (deployed as a replica set).
+#### Sharding Strategy
+- **Hashed Sharding** involves computing a hash of the shard key field’s value
+- **Ranged sharding** involves dividing data into ranges based on the shard key values.
