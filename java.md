@@ -15,14 +15,25 @@
 - `this` and `super` may both be used for methods or variables defined in the parent class, but only `this` may be used for members defined in the current class.
 - 5 rules for everriding method __TODO p253__
 - it is not possible to override a private method in a parent class since the parent method is not accessible from the child class. Just because a child class doesn’t have access to the parent method, doesn’t mean the child class can’t de ne its own version of the method.
-- Unlike overriding a method, in which a child method replaces the parent method in calls defined in both the parent and child, hidden methods only replace parent methods in the calls de ned in the child class.
+- Unlike overriding a method, in which a child method replaces the parent method in calls defined in both the parent and child, hidden methods only replace parent methods in the calls defined in the child class.
 - final methods cannot be overridden or hidden
 - Java doesn’t allow variables to be overridden but instead hidden. When you hide a variable, you define a variable with the same name as a variable in a parent class. This creates two copies of the variable within an instance of the child class: one instance defined for the parent reference and another defined for the child reference.
-
+- Casting object rules __TODO p282__
 
 ### Interface & Abstract Class
+- Astract methods can't be declared as `private` or `final`.
+- Interface methods (inc. default) can be declared as `public` only.
+
 ### Enum
+- If no access modifier is specified for the constructor of an enum type, the constructor is `private`.
+- It is a compile-time error if the constructor of an enum type (§8.9) is declared `public` or `protected`.
+
 ### Nested Class
+- member inner class - any accessor type, any inheritance, can be abstract of final, can access any to members of outer class. BUT cannot declare static fields/members
+- local inner class - do not have accessor type, can access to any members of outer class. BUT can access only must be final or effectively final local variables (https://stackoverflow.com/a/20938132)
+- anonymous inner class = local inner class wihout name
+- static nested
+__TODO p33__
 
 ## Collections
 ### Equals & Hashcode
