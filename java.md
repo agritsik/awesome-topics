@@ -44,4 +44,3 @@ __TODO p33__
 ### JVM
 ### Exceptions
 ### Concurrency
-### Singleton
