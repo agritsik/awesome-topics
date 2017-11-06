@@ -44,7 +44,7 @@ __TODO p33__
 ### JVM
 - **JIT** - the class files (which are compiled from Java source code) are further compiled at runtime, and they can be turned into very highly optimized machine code. This optimized code runs extremely fast.
 - Java HotSpot VM automatically monitors which methods are being executed. Once a method has become eligible (e.g. called often), it is scheduled for compilation into machine code, and it is then known as a *hot method*. The compilation into machine code happens on a separate JVM thread and will not interrupt the execution of the program.
-- **JIT Compilation Techniques and Modes** - (oracle)[http://www.oracle.com/technetwork/articles/java/architect-evans-pt1-2266278.html]
+- **JIT Compilation Techniques and Modes** - [oracle](http://www.oracle.com/technetwork/articles/java/architect-evans-pt1-2266278.html)
 - **Heap vs Stack** - All local variables (including method arguments) go on the stack; objects and all their fields are stored in the heap. Each Thread in Java has his own stack
 - **Heap under the hood** - Young Generation (Eden, Survivors Spaces) :heavy_plus_sign: Old Generation :heavy_plus_sign: PermGen (Metaspace since java8)
 
