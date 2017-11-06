@@ -14,7 +14,7 @@
 - The key is that when Java sees you define a class that doesn’t extend another class, it immediately adds the syntax `extends java.lang.Object` to the class definition.
 - `this` and `super` may both be used for methods or variables defined in the parent class, but only `this` may be used for members defined in the current class.
 - 5 rules for everriding method __TODO p253__
-- it is not possible to override a private method in a parent class since the parent method is not accessible from the child class. Just because a child class doesn’t have access to the parent method, doesn’t mean the child class can’t de ne its own version of the method.
+- it is not possible to override a private method in a parent class since the parent method is not accessible from the child class. Just because a child class doesn’t have access to the parent method, doesn’t mean the child class can’t define its own version of the method.
 - Unlike overriding a method, in which a child method replaces the parent method in calls defined in both the parent and child, hidden methods only replace parent methods in the calls defined in the child class.
 - final methods cannot be overridden or hidden
 - Java doesn’t allow variables to be overridden but instead hidden. When you hide a variable, you define a variable with the same name as a variable in a parent class. This creates two copies of the variable within an instance of the child class: one instance defined for the parent reference and another defined for the child reference.
@@ -22,7 +22,7 @@
 
 ### Interface & Abstract Class
 - Astract methods can't be declared as `private` or `final`.
-- Interface methods (inc. default) can be declared as `public` only.
+- Interface methods (inc. default) can be declared as `public` only. :thought_balloon: *since interface is a public [stackoverflow](https://stackoverflow.com/a/9614756)*
 
 ### Enum
 - If no access modifier is specified for the constructor of an enum type, the constructor is `private`.
@@ -30,7 +30,7 @@
 
 ### Nested Class
 - member inner class - any accessor type, any inheritance, can be abstract of final, can access any to members of outer class. BUT cannot declare static fields/members
-- local inner class - do not have accessor type, can access to any members of outer class. BUT can access only must be final or effectively final local variables (https://stackoverflow.com/a/20938132)
+- local inner class - do not have accessor type, can access to any members of outer class. BUT can access only must be final or effectively final local variables :thought_balloon: *a new feature of java8 - if a reference is not changed it is effectively final [stackoverflow](https://stackoverflow.com/a/20938132)*
 - anonymous inner class = local inner class wihout name
 - static nested
 __TODO p33__
@@ -42,5 +42,14 @@ __TODO p33__
 
 ## Extra
 ### JVM
+- **JIT** - the class files (which are compiled from Java source code) are further compiled at runtime, and they can be turned into very highly optimized machine code. This optimized code runs extremely fast.
+- Java HotSpot VM automatically monitors which methods are being executed. Once a method has become eligible (e.g. called often), it is scheduled for compilation into machine code, and it is then known as a *hot method*. The compilation into machine code happens on a separate JVM thread and will not interrupt the execution of the program.
+- **JIT Compilation Techniques and Modes** - (oracle)[http://www.oracle.com/technetwork/articles/java/architect-evans-pt1-2266278.html]
+- **Heap vs Stack** - All local variables (including method arguments) go on the stack; objects and all their fields are stored in the heap. Each Thread in Java has his own stack
+- **Heap under the hood** - Young Generation (Eden, Survivors Spaces) :heavy_plus_sign: Old Generation :heavy_plus_sign: PermGen (Metaspace since java8)
+
 ### Exceptions
+- **Exceptions hierarchy** - Throwable -> Error :heavy_plus_sign: Throwable -> Exception -> RunTimeException
+- Checked vs Unchecked
+- try-with-resources and `AutoCloseable`
 ### Concurrency
