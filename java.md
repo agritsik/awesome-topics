@@ -37,6 +37,7 @@ __TODO p33__
 
 ## Collections
 ### Equals & Hashcode
+- `equals` method is used to determine equality. `hascode` method is used to know which bucket to look in. :thought_balloon: *it helps to achieve `O(1)` rather than `O(n)`*
 ### Comparator & Comparable
 ### Collections
 
