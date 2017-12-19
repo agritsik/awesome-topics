@@ -54,3 +54,12 @@ __TODO p33__
 - Checked vs Unchecked
 - try-with-resources and `AutoCloseable`
 ### Concurrency
+
+### TODO
+- primitive default initalization
+- private contructor vs final class
+- HashMap vs LinkedHashMap
+- Reflections usecases
+- Predicates
+- map() vs flatMap()
+- synchronized vs lock (monitor)
