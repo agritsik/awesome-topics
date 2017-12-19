@@ -56,10 +56,14 @@ __TODO p33__
 ### Concurrency
 
 ### TODO
+- How JVM loads classes, order, static and dynamic
 - primitive default initalization
 - private contructor vs final class
+- Covariant types
+- Initialize Generic Object
 - HashMap vs LinkedHashMap
 - Reflections usecases
 - Predicates
 - map() vs flatMap()
 - synchronized vs lock (monitor)
+- flatMap vs Map
