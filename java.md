@@ -61,10 +61,12 @@ __TODO p33__
 - Private contructor vs final class. `final` indicates that the class is not designed for inheritance. Private constructors gives the class the control over its instantiation [stackoverflow](https://stackoverflow.com/a/18523297)
 - Covariant types [stackoverflow](https://stackoverflow.com/a/18666878), [Effective Java #26](#)
 - Initialize Generic Object [todo](https://stackoverflow.com/questions/1090458/instantiating-a-generic-class-in-java)
-- HashMap vs LinkedHashMap 
+- HashMap vs LinkedHashMap https://stackoverflow.com/a/17708526
+- synchronized vs lock (monitor)
 - Reflections usecases
+
+### TODO
 - Predicates
 - map() vs flatMap()
-- synchronized vs lock (monitor)
-- flatMap vs Map
+- optional
 
