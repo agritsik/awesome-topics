@@ -56,14 +56,17 @@ __TODO p33__
 ### Concurrency
 
 ### TODO
+
 - How JVM loads classes, order, static and dynamic
-- primitive default initalization
-- private contructor vs final class
-- Covariant types
-- Initialize Generic Object
-- HashMap vs LinkedHashMap
+- Primitive default initalization. Fields that are declared but not initialized will be set to a reasonable default by the compiler. Local variables are slightly different; the compiler never assigns a default value to an uninitialized local variable [oracle](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+- Private contructor vs final class. `final` indicates that the class is not designed for inheritance. Private constructors gives the class the control over its instantiation [stackoverflow](https://stackoverflow.com/a/18523297)
+- Covariant types [stackoverflow](https://stackoverflow.com/a/18666878), [Effective Java #26](#)
+- Initialize Generic Object [todo](https://stackoverflow.com/questions/1090458/instantiating-a-generic-class-in-java)
+
+- HashMap vs LinkedHashMap 
 - Reflections usecases
 - Predicates
 - map() vs flatMap()
 - synchronized vs lock (monitor)
 - flatMap vs Map
+
