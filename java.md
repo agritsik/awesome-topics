@@ -67,6 +67,6 @@ __TODO p33__
 
 ### TODO
 - Predicates
-- map() vs flatMap()
+- map() vs flatMap() [stackoverflow](https://stackoverflow.com/a/26684710) and [adam-bien](http://www.adam-bien.com/roller/abien/entry/java_8_flatmap_example)
 - optional
 
