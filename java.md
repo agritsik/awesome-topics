@@ -55,15 +55,21 @@ __TODO p33__
 - try-with-resources and `AutoCloseable`
 ### Concurrency
 
-### TODO
+### TODO basics
 - How JVM loads classes, order, static and dynamic
 - Primitive default initalization. Fields that are declared but not initialized will be set to a reasonable default by the compiler. Local variables are slightly different; the compiler never assigns a default value to an uninitialized local variable [oracle](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 - Private contructor vs final class. `final` indicates that the class is not designed for inheritance. Private constructors gives the class the control over its instantiation [stackoverflow](https://stackoverflow.com/a/18523297)
 - Covariant types [stackoverflow](https://stackoverflow.com/a/18666878), [Effective Java #26](#)
 - Initialize Generic Object [todo](https://stackoverflow.com/questions/1090458/instantiating-a-generic-class-in-java)
-- HashMap vs LinkedHashMap https://stackoverflow.com/a/17708526
-- synchronized vs lock (monitor)
+- HashMap vs LinkedHashMap [stackoverflow](https://stackoverflow.com/a/17708526)
 - Reflections usecases
+
+### TODO concurrency
+- synchronized vs lock (monitor) [stackoverflow](https://stackoverflow.com/a/11821900)
+- Intrinsic Locks [oracle](https://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html)
+- reentrancy [stackoverflow](https://stackoverflow.com/a/16504266)
+- Guarded Blocks todo
+
 
 ### TODO
 - Predicates
