@@ -1,3 +1,18 @@
+## Basics
+### JVM
+- **JIT** - the class files (which are compiled from Java source code) are further compiled at runtime, and they can be turned into very highly optimized machine code. This optimized code runs extremely fast.
+- Java HotSpot VM automatically monitors which methods are being executed. Once a method has become eligible (e.g. called often), it is scheduled for compilation into machine code, and it is then known as a *hot method*. The compilation into machine code happens on a separate JVM thread and will not interrupt the execution of the program.
+- **JIT Compilation Techniques and Modes** - [oracle](http://www.oracle.com/technetwork/articles/java/architect-evans-pt1-2266278.html)
+- **Heap vs Stack** - All local variables (including method arguments) go on the stack; objects and all their fields are stored in the heap. Each Thread in Java has his own stack
+- **Heap under the hood** - Young Generation (Eden, Survivors Spaces) :heavy_plus_sign: Old Generation :heavy_plus_sign: PermGen (Metaspace since java8)
+
+### Exceptions
+- **Exceptions hierarchy** - Throwable -> Error :heavy_plus_sign: Throwable -> Exception -> RunTimeException
+- Checked vs Unchecked
+- try-with-resources and `AutoCloseable`
+
+
+
 ## OOP
 ### Encapsulation & Methods
 - Java offers four choices of access modifer: Public, Protected, Default (Package Private), Private
@@ -7,7 +22,6 @@
 - In Java, the parent constructor is always executed before the child constructor. Think like the compiler.
 - The constructor is part of the initialization process, so it is allowed to assign final instance variables in it. By the time the constructor completes, all final instance variables must have been set.
 - Order of Initialization - superclass, Static variable declarations and static initializers, Instance variable declarations and instance initializers, The constructor
-
 
 ### Inheritance & Polymorphism
 - a Java  file can have many classes but at most one public class. In fact, it may have no public class at all.
@@ -35,27 +49,25 @@
 - static nested
 __TODO p33__
 
+
+
 ## Collections
 ### Equals & Hashcode
 - `equals` method is used to determine equality. `hascode` method is used to know which bucket to look in. :thought_balloon: *it helps to achieve `O(1)` rather than `O(n)`*
 ### Comparator & Comparable
 ### Collections
 
-## Extra
-### JVM
-- **JIT** - the class files (which are compiled from Java source code) are further compiled at runtime, and they can be turned into very highly optimized machine code. This optimized code runs extremely fast.
-- Java HotSpot VM automatically monitors which methods are being executed. Once a method has become eligible (e.g. called often), it is scheduled for compilation into machine code, and it is then known as a *hot method*. The compilation into machine code happens on a separate JVM thread and will not interrupt the execution of the program.
-- **JIT Compilation Techniques and Modes** - [oracle](http://www.oracle.com/technetwork/articles/java/architect-evans-pt1-2266278.html)
-- **Heap vs Stack** - All local variables (including method arguments) go on the stack; objects and all their fields are stored in the heap. Each Thread in Java has his own stack
-- **Heap under the hood** - Young Generation (Eden, Survivors Spaces) :heavy_plus_sign: Old Generation :heavy_plus_sign: PermGen (Metaspace since java8)
 
-### Exceptions
-- **Exceptions hierarchy** - Throwable -> Error :heavy_plus_sign: Throwable -> Exception -> RunTimeException
-- Checked vs Unchecked
-- try-with-resources and `AutoCloseable`
-### Concurrency
 
-### TODO basics
+## Concurrency
+- synchronized vs lock (monitor) [stackoverflow](https://stackoverflow.com/a/11821900)
+- Intrinsic Locks [oracle](https://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html)
+- reentrancy [stackoverflow](https://stackoverflow.com/a/16504266)
+- Guarded Blocks todo
+
+
+
+## TODO
 - How JVM loads classes, order, static and dynamic
 - Primitive default initalization. Fields that are declared but not initialized will be set to a reasonable default by the compiler. Local variables are slightly different; the compiler never assigns a default value to an uninitialized local variable [oracle](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 - Private contructor vs final class. `final` indicates that the class is not designed for inheritance. Private constructors gives the class the control over its instantiation [stackoverflow](https://stackoverflow.com/a/18523297)
@@ -63,16 +75,8 @@ __TODO p33__
 - Initialize Generic Object [todo](https://stackoverflow.com/questions/1090458/instantiating-a-generic-class-in-java)
 - HashMap vs LinkedHashMap [stackoverflow](https://stackoverflow.com/a/17708526)
 - Reflections usecases
-
-### TODO concurrency
-- synchronized vs lock (monitor) [stackoverflow](https://stackoverflow.com/a/11821900)
-- Intrinsic Locks [oracle](https://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html)
-- reentrancy [stackoverflow](https://stackoverflow.com/a/16504266)
-- Guarded Blocks todo
-
-
-### TODO
 - Predicates
 - map() vs flatMap() [stackoverflow](https://stackoverflow.com/a/26684710) and [adam-bien](http://www.adam-bien.com/roller/abien/entry/java_8_flatmap_example)
 - optional
+
 
