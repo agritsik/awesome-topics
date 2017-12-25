@@ -68,7 +68,7 @@ __TODO p33__
 
 
 ## TODO
-- How JVM loads classes, order, static and dynamic
+- How JVM loads classes, order, static and dynamic [oracle](https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-5.html)
 - Primitive default initalization. Fields that are declared but not initialized will be set to a reasonable default by the compiler. Local variables are slightly different; the compiler never assigns a default value to an uninitialized local variable [oracle](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 - Private contructor vs final class. `final` indicates that the class is not designed for inheritance. Private constructors gives the class the control over its instantiation [stackoverflow](https://stackoverflow.com/a/18523297)
 - Covariant types [stackoverflow](https://stackoverflow.com/a/18666878), [Effective Java #26](#)
