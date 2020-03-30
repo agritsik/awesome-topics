@@ -21,7 +21,7 @@
 - This **personal certificate** is then decrypted with the private key of the website owner and finally, he installs it on the website.
 
 - Establishing secured connection requires 2 steps - **Certificate validation** and **Session Key exchanging**
-- **Certificate validation**: server sends the Certificate with Public Key -> client validates the Certificate trying decrypt digital signature using Root-Certificates and get a public key (browsers come with a pre-installed list of public keys from all the major CA’s).
+- **Certificate validation**: server sends the Certificate with Public Key -> client validates the Certificate trying decrypt digital signature using Root-Certificates and get a servers' public key (browsers come with a pre-installed list of public keys from all the major CA’s).
 - **Key exchanging**: client creates 2 copies of **Session Key** -> client sends one copy of Session Key ecrypted by servers' Public Key back to the server -> server decrypts Session Key using its Private Key -> client and server use this Session Key to encrypt-decrypt request data
 
 
