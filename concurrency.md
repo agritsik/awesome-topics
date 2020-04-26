@@ -36,3 +36,7 @@
 - The specific implementation of Coroutines in C++ is a bit interesting. At its most basic level, it adds a few keywords to C++: `co_return` `co_await` `co_yield`. A function becomes a coroutine by having one of those in its body.
 - The simplest coroutine is a generator. `co_yield` suspends the functions execution, stores that state in the `generator<int>`
 - `co_await` meanwhile lets you splice one coroutine onto another.
+
+### (When to use promise over async or packaged_task)[https://stackoverflow.com/questions/17729924/when-to-use-promise-over-async-or-packaged-task]?
+- Use `std::async` only for simple things, e.g. to make some call non-blocking.
+- Use `std::promise` when you need more control over the future.
