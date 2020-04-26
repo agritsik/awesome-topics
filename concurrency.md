@@ -1,18 +1,18 @@
 # Generic concepts
 ### [What's the difference between a Future and a Promise?](https://stackoverflow.com/questions/14541975/whats-the-difference-between-a-future-and-a-promise)
-- Futures and Promises are pretty similar concepts, the difference is that a future is a read-only container for a result that does not yet exist, while a promise can be written (normally only once).	
-- The Java 8 CompletableFuture and the Guava SettableFuture can be thought of as promises
+- **Futures** and **Promises** are pretty similar concepts, the difference is that a future is *a read-only container for a result that does not yet exist*, while a promise can be written (normally only once).	
+- The Java 8 `CompletableFuture` and the Guava `SettableFuture` can be thought of as promises
 
 
 # Python approach generators/coroutines/tasks
 ### [What can you use Python generator functions for?](https://stackoverflow.com/questions/102535/what-can-you-use-python-generator-functions-for)
-You can think of generators as returning multiple items, as if they return a list, but instead of returning them all at once they return them one-by-one, and the generator function is paused until the nextitem is requested. 
-- generators are good for calculating large sets of results 
+- You can think of **generators** as returning multiple items, as if they return a list, but instead of returning them all at once they return them one-by-one, and the generator function is paused until the nextitem is requested. 
+- **generators** are *good for calculating large sets of results* 
 - another use for generators (that is really the same) is to replace callbacks with iteration
 
 ### [Difference between coroutine and future/task in Python 3.5?](https://stackoverflow.com/questions/34753401/difference-between-coroutine-and-future-task-in-python-3-5)
-- A coroutine is a generator function that can both yield values and accept values from the outside. The benefit of using a coroutine is that we can pause the execution of a function and resume it later. In case of a network operation, it makes sense to pause the execution of a function while we're waiting for the response. We can use the time to run some other functions.
-- A **future** is like the Promise objects from Javascript. It is like a placeholder for a value that will be materialized in the future.
+- A **coroutine** is a generator function that can both yield values and accept values from the outside. The benefit of using a coroutine is that we can pause the execution of a function and resume it later. In case of a network operation, it makes sense to pause the execution of a function while we're waiting for the response. We can use the time to run some other functions.
+- A **future** is like the **Promise** objects from Javascript. It is like a placeholder for a value that will be materialized in the future.
 
 ### [Coroutines and Tasks](https://docs.python.org/3/library/asyncio-task.html)
 - `Coroutines` declared with the async/await syntax is the preferred way of writing asyncio applications.
