@@ -37,6 +37,8 @@
 - The simplest coroutine is a generator. `co_yield` suspends the functions execution, stores that state in the `generator<int>`
 - `co_await` meanwhile lets you splice one coroutine onto another.
 
-### (When to use promise over async or packaged_task)[https://stackoverflow.com/questions/17729924/when-to-use-promise-over-async-or-packaged-task]?
+### async vs promise vs package_tasks [1](https://stackoverflow.com/a/24164631], (2)[https://stackoverflow.com/a/11020645]
+- In the words of [futures.state] a `std::future` is *an asynchronous return object* ("an object that reads results from a shared state") and a `std::promise` is *an asynchronous provider* ("an object that provides a result to a shared state")
+- *The asynchronous provider* is what initially creates the shared state that a future refers to. `std::promise` is one type of asynchronous provider, `std::packaged_task` is another, and the internal detail of `std::async` is another
 - Use `std::async` only for simple things, e.g. to make some call non-blocking.
 - Use `std::promise` when you need more control over the future.
