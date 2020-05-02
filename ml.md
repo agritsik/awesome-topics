@@ -21,3 +21,4 @@ Given a machine learning problem, first of all, one can determine whether it is 
 ### Underfitting VS. Overfitting
 - **An underfitting model** is the one which does not fit well with the training data, i.e. significantly deviated from the ground truth. One of the causes of underfitting could be that the model is over-simplified for the data, therefore it is not capable to capture the hidden relationship within the data.
 - **An overfitting model** is the one which fits well with the training data, i.e. little or no error, however does not generalized well to the unseen data. Contrary to the case of underfittng, a over-complicated model that is able to fit every bit of the data, would fall into the traps of noises and errors.
+<img src="https://github.com/agritsik/awesome-topics/blob/master/ml1.png" height="150px">
