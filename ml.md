@@ -17,7 +17,7 @@ Given a machine learning problem, first of all, one can determine whether it is 
 1. **Determine on which type of machine learning problems we would like to solve**, i.e. *supervised* vs. *unsupervised*. We say that the *data is labeled*, if one of the attributes in the data is the desired one, i.e. the target attribute.
 2. For the *supervised* machine learning algorithms, we further **determine the type of the generated model**: *classification* or *regression*, based on the expected output of model, i.e. *discrete value for classification model* and *continuous value for regression model*.
 1. Once we determine on the type of model that we would like to build out of the data, we then go ahead to **perform the feature engineering**, which is a group of activities that tranform the data into the desired format.
-
+<img src="https://github.com/agritsik/awesome-topics/blob/master/img/ml-workflow.gif" height="150px">
 
 ### Underfitting VS. Overfitting
 - **An underfitting model** is the one which does not fit well with the training data, i.e. significantly deviated from the ground truth. One of the causes of underfitting could be that the model is over-simplified for the data, therefore it is not capable to capture the hidden relationship within the data.
