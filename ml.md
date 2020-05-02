@@ -28,7 +28,9 @@ Given a machine learning problem, first of all, one can determine whether it is 
 ### Regularization [\*](https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a)
 One of the major aspects of training your machine learning model is avoiding *overfitting*. The model will have a low accuracy if it is overfitting. This happens because your model is trying too hard to capture the noise in your training dataset. By noise we mean the data points that don’t really represent the true properties of your data, but random chance.
 
-The concept of balancing bias and variance, is helpful in understanding the phenomenon of overfitting - [Bias-Variance Trade off](https://towardsdatascience.com/balancing-bias-and-variance-to-control-errors-in-machine-learning-16ced95724db). 
+The concept of balancing bias and variance, is helpful in understanding the phenomenon of overfitting - [Bias-Variance Trade-off](https://towardsdatascience.com/balancing-bias-and-variance-to-control-errors-in-machine-learning-16ced95724db). 
+
+
 <img src="https://github.com/agritsik/awesome-topics/blob/master/img/ml-bias-variance.png" height="150px">
 
 **Regularization** is a form of regression, that constrains/regularizes or shrinks the coefficient estimates towards zero. In other words, this technique discourages learning a more complex or flexible model, so as to avoid the risk of overfitting.
